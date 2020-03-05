@@ -61,6 +61,9 @@ nav {
   background: url("https://images.unsplash.com/photo-1570083208073-f0c09ea8dcf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80")
     no-repeat center -3rem fixed;
   background-size: cover;
+
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 }
 .landing__logo {
   font-size: 12vw;
@@ -161,20 +164,21 @@ h2 {
 }
 
 .contact-form {
-  padding: 5rem;
-  -webkit-clip-path: polygon(0 0, 100% 16%, 100% 83%, 0% 100%);
-  clip-path: polygon(0 0, 100% 16%, 100% 83%, 0% 100%);
+  padding-top: 18rem;
+  padding-bottom: 10rem;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
 
-  background: #ee9ca7; /* fallback for old browsers */
+  background: hsl(352, 71%, 77%); /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ffdde1,
-    #ee9ca7
+    hsl(353, 100%, 93%),
+    hsl(352, 71%, 77%)
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #ffdde1,
-    #ee9ca7
+    hsl(353, 100%, 93%),
+    hsl(352, 71%, 77%)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   display: flex;
@@ -182,7 +186,7 @@ h2 {
 }
 
 .contact-form__heading {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 form {
@@ -246,15 +250,24 @@ textarea {
     font-size: 12vw;
   }
   form {
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     text-align: left;
     margin-bottom: 10rem;
   }
 
+  .contact-form__heading {
+    font-size: 8vw;
+  }
+
   .form__label {
     width: 80%;
     text-align: left;
+  }
+
+  .form__label {
+    padding: 0;
+    margin-top: 1rem;
   }
 
   .about-us {
@@ -286,6 +299,10 @@ textarea {
 
   .about__links--icon {
     font-size: 6vw;
+  }
+
+  .contact-form__heading {
+    margin-bottom: 0;
   }
   textarea {
     min-height: 6rem;
