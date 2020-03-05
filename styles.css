@@ -46,9 +46,6 @@
 
 .landing__title{
   width: 50%;
-}
-
-.landing__title{
   text-align: center;
 }
 
@@ -60,4 +57,16 @@
 
 .about__links--icon {
   font-size: 2rem;
+}
+
+.copyright-footer{
+display: flex;
+height: 15rem;
+justify-content: center;
+align-items: center;
+background-color: grey;
+}
+
+.copyright-footer__text{
+text-align: center;
 }
