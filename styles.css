@@ -12,7 +12,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
   height: 100vh;
   padding-top: 3rem;
 }
@@ -73,14 +72,19 @@ nav {
 }
 h2 {
   text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.about-us {
+  margin-bottom: 10rem;
 }
 .about__text {
   width: 55%;
-  margin-bottom: 10%;
+  margin-bottom: 4rem;
   text-align: justify;
 }
 .about__heading {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .about__team {
@@ -95,6 +99,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.about__name {
+  padding: 1rem;
 }
 
 .about__img {
@@ -120,8 +127,13 @@ h2 {
 }
 
 .about__links--icon {
-  font-size: 2rem;
+  font-size: 3rem;
   color: hsl(0, 0%, 0%);
+}
+
+.about__links--icon:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 form {
@@ -169,7 +181,7 @@ textarea {
 
 @media screen and (max-width: 1700px) {
   .about__links--icon {
-    font-size: 3vw;
+    font-size: 2.6vw;
   }
 }
 
