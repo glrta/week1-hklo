@@ -1,13 +1,22 @@
-.about-us {
+* {
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10%;
+  height: 100vh;
 }
 
 .about__text {
   width: 55%;
   margin-bottom: 10%;
+  text-align: justify;
+
 }
 .about__heading {
   text-align: center;
@@ -66,6 +75,39 @@
 
 .about__links--icon {
   font-size: 2rem;
+  color: hsl(0,0%,0%);
+
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__label {
+  width: 10%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.form__input {
+  width: 90%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.form__submit {
+  width: 10rem;
+  margin: 1rem;
 }
 
 .copyright-footer{
@@ -79,3 +121,43 @@ background-color: grey;
 .copyright-footer__text{
 text-align: center;
 }
+
+@media screen and (max-width: 1700px) {
+
+  .about__links--icon{
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px){
+.landing__title{
+    width: 65%;
+    font-size: 85%;
+  }
+  .about__team {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  .about__person {
+  margin-bottom: 2rem;
+  }
+.about__img{
+  width: 50vw;
+  height: 50vw;
+}
+.about__person{
+  width: 80%;
+}
+
+.about__text{
+  width: 80vw;
+}
+
+.about__links--icon{
+  font-size: 6vw;
+}
+
+}
+
+
