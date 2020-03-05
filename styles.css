@@ -32,6 +32,15 @@
   height: 20vw;
   border-radius: 50%;
   object-fit: cover;
+  filter: grayscale(1);
+  opacity: 80%;
+  transition: 0.3s ease-in-out;
+}
+
+.about__person:hover .about__img{
+  filter: grayscale(0);
+  opacity: 100%;
+  transform: scaleY(1.01);
 }
 
 .landing{
