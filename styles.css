@@ -1,3 +1,8 @@
+:root {
+  --primaryColor: hsl(0, 100%, 100%);
+  --secondaryColor: hsl(0, 0%, 0%, 0.5);
+}
+
 body {
   font-family: "Asap", sans-serif;
 }
@@ -12,7 +17,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
   height: 100vh;
   padding-top: 3rem;
 }
@@ -20,7 +24,7 @@ section {
 nav {
   position: fixed;
   top: 0;
-  background-color: hsl(0, 100%, 100%);
+  background-color: var(--primaryColor);
   opacity: 0.9;
   width: 100%;
   display: flex;
@@ -29,11 +33,23 @@ nav {
   height: 3rem;
   z-index: 2;
 }
-
-.nav__links > a {
-  text-decoration: none;
-  color: hsl(0, 100%, 0%);
+.nav__links {
+  position: relative;
+}
+.nav__logo {
   padding: 0 2rem;
+  font-size: 1.5rem;
+}
+.nav__link--hover {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  transition: color 0.4s ease-out;
+}
+.nav__link--hover:hover {
+  opacity: 0.3;
+  transition: ease-in-out 0.3s;
 }
 
 .landing {
@@ -43,33 +59,32 @@ nav {
   justify-content: center;
   align-items: center;
   background: url("https://images.unsplash.com/photo-1570083208073-f0c09ea8dcf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80")
-    no-repeat center center fixed;
+    no-repeat center -3rem fixed;
   background-size: cover;
 }
 .landing__logo {
-  font-size: 12rem;
-  color: hsl(48, 52%, 94%);
+  font-size: 12vw;
+  color: var(--primaryColor);
 }
 .landing__heading {
   margin-bottom: 1rem;
-  font-size: 6rem;
+  font-size: 10vw;
   font-family: "Muli", sans-serif;
-  color: hsl(48, 52%, 94%);
+  color: var(--primaryColor);
   /* font-weight: 700; */
 }
-.landing__title {
-  width: 50%;
-  height: 50%;
+.landing__box {
   text-align: center;
-  background-color: hsl(0, 0%, 0%, 0.5);
+  background-color: var(--secondaryColor);
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   border-radius: 0.5rem;
+  padding: 1rem;
 }
-.landing__title > p {
-  color: hsl(48, 52%, 94%);
+.landing__box > p {
+  color: var(--primaryColor);
 }
 h2 {
   text-transform: uppercase;
@@ -121,7 +136,7 @@ h2 {
 
 .about__links--icon {
   font-size: 2rem;
-  color: hsl(0, 0%, 0%);
+  color: var(--secondaryColor);
 }
 
 form {
@@ -154,13 +169,11 @@ textarea {
   width: 10rem;
   margin: 1rem;
 }
-
 .copyright-footer {
   display: flex;
   height: 15rem;
   justify-content: center;
   align-items: center;
-  background-color: grey;
 }
 
 .copyright-footer__text {
@@ -177,6 +190,12 @@ textarea {
   .landing {
     background: url("https://images.unsplash.com/photo-1570083208073-f0c09ea8dcf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80")
       no-repeat -8rem 3rem fixed;
+  }
+  .landing__logo {
+    font-size: 15vw;
+  }
+  .landing__heading {
+    font-size: 12vw;
   }
   form {
     width: 80%;
