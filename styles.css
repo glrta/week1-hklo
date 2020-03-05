@@ -19,7 +19,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 105vh;
+  min-height: 800px;
   padding-top: 3rem;
 }
 
@@ -96,6 +97,10 @@ nav {
 h2 {
   text-transform: uppercase;
   font-size: 2.5rem;
+}
+
+.about-us {
+  margin-bottom: 3rem;
 }
 
 .about__content {
