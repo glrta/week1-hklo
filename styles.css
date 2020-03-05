@@ -61,6 +61,15 @@ nav > a {
   height: 20vw;
   border-radius: 50%;
   object-fit: cover;
+  filter: grayscale(1);
+  opacity: 80%;
+  transition: 0.3s ease-in-out;
+}
+
+.about__person:hover .about__img{
+  filter: grayscale(0);
+  opacity: 100%;
+  transform: scaleY(1.01);
 }
 
 .landing{
@@ -100,13 +109,13 @@ form {
 }
 
 .form__label {
-  width: 10%;
+  width: 20%;
   padding: 1rem;
   margin-top: 1rem;
 }
 
 .form__input {
-  width: 90%;
+  width: 80%;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -141,6 +150,21 @@ text-align: center;
 }
 
 @media screen and (max-width: 600px){
+
+  form{
+    width: 80%;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .form__label{
+    width:80%;
+text-align: left;
+  }
+
+  .about-us{
+    height:auto;
+  }
 .landing__title{
     width: 65%;
     font-size: 85%;
