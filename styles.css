@@ -83,16 +83,24 @@ nav {
   border-radius: 0.5rem;
   padding: 1rem;
 }
+
 .landing__box > p {
   color: var(--primaryColor);
+  letter-spacing: 0.8px;
 }
 h2 {
   text-transform: uppercase;
   font-size: 2.5rem;
 }
 .about-us {
-  margin-bottom: 10rem;
+  /* margin-bottom: 5rem; */
 }
+.about__content {
+  line-height: 2;
+  font-size: 1.3.rem;
+  letter-spacing: 0.5px;
+}
+
 .about__text {
   width: 55%;
   margin-bottom: 4rem;
@@ -152,6 +160,31 @@ h2 {
   transform: scale(1.1);
 }
 
+.contact-form {
+  display: ;
+  -webkit-clip-path: polygon(0 0, 100% 16%, 100% 83%, 0% 100%);
+  clip-path: polygon(0 0, 100% 16%, 100% 83%, 0% 100%);
+
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form__heading {
+  margin-bottom: 3rem;
+}
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -159,6 +192,7 @@ form {
   text-align: right;
   align-items: center;
   justify-content: center;
+  color: hsl(0, 0%, 0%);
 }
 
 .form__label {
