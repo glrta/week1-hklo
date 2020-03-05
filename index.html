@@ -6,12 +6,16 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script
+    src="https://kit.fontawesome.com/794b746eef.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
     <!-- navbar goes here -->
     <nav></nav>
 
-    <!-- heading goes here -->
+        <!-- heading goes here -->
 <section class="landing">
   <div class="landing__title">
     <h1 class="landing__heading">CatsCode4U</h1>
@@ -94,23 +98,25 @@
     <section class="contact-form">
       <h2>CONTACT US</h2>
       <form action="url">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required />
-        <label for="company-name">Company</label>
-        <input type="text" name="company-name" id="company-name" required />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
-        <input type="submit" value="Submit" />
+        <label class="form__label" for="name">Name</label>
+        <input class="form__input" type="text" name="name" id="name" required />
+        <label class="form__label" for="company-name">Company</label>
+        <input class="form__input" type="text" name="company-name" id="company-name" required />
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" type="email" name="email" id="email" required />
+        <label class="form__label" for="message">Message</label>
+        <textarea class="form__input" name="message" id="message"></textarea>
+        <input class="form__submit" type="submit" value="Submit" />
       </form>
     </section>
     <!-- footer goes here -->
-    <footer></footer>
-    <script
-      src="https://kit.fontawesome.com/794b746eef.js"
-      crossorigin="anonymous"
-    ></script>
+    <footer class="copyright-footer">
+        <div class="copyright-footer__text">
+          <p class="copyright-footer__date"> @Copyright 2020</p>
+          <p class= "copyright-footer__rights">All rights reserved. Powered by <a href="url.com">Catnip</a></p>
+        </div>
+
+    </footer>
   </body>
 </html>
 
