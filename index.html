@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>CatsCode4U</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i|Baloo+Chettan|Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/794b746eef.js"
@@ -14,23 +18,25 @@
   <body>
     <!-- navbar goes here -->
     <nav>
-      <a href="#about-us">About Us</a>
-      <a href="#contact-form">Contact Us</a>
+      <i class="fas fa-paw"></i>
+      <div class="nav__links">
+        <a href="#about-us">About Us</a>
+        <a href="#contact-form">Contact Us</a>
+      </div>
     </nav>
 
     <!-- heading goes here -->
     <section class="landing">
       <div class="landing__title">
+        <i class="fas fa-paw landing__logo"></i>
         <h1 class="landing__heading">CatsCode4U</h1>
-        <p>
-          A web design agency by cats for you.
-        </p>
+        <p>A web design agency by cats for you.</p>
       </div>
     </section>
     <!-- about section -->
     <section class="about-us" id="about-us">
       <div class="about__text">
-        <h2 class="about__heading">ABOUT US</h2>
+        <h2 class="about__heading">About us</h2>
         <p class="about__content">
           We're a cutting-edge digital agency that has provided quality tech services for the past 5 years to over 100 clients,
           and launched 25 projects internationally.
@@ -120,7 +126,7 @@
     </section>
     <!-- contact form -->
     <section class="contact-form" id="contact-form">
-      <h2>CONTACT US</h2>
+      <h2>Contact us</h2>
       <form action="url">
         <label class="form__label" for="name">Name</label>
         <input class="form__input" type="text" name="name" id="name" required />
@@ -137,7 +143,6 @@
           class="form__input"
           type="email"
           name="email"
-          g
           id="email"
           required
         />
