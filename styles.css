@@ -2,9 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10%;
 }
 
 .about__text {
+  width: 55%;
+  margin-bottom: 10%;
+}
+.about__heading {
+  text-align: center;
 }
 
 .about__team {
@@ -26,4 +32,14 @@
   height: 20vw;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.about__links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about__links--icon {
+  font-size: 2rem;
 }
