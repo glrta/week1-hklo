@@ -216,6 +216,13 @@ textarea {
 .form__submit {
   width: 10rem;
   margin: 1rem;
+  border-radius: 3rem;
+  background-color: var(--primaryColor);
+}
+
+.form__submit:hover{
+  box-shadow: 1rem, 1rem, 1rem, var(--secondaryColor);
+
 }
 .copyright-footer {
   display: flex;
