@@ -8,7 +8,28 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
   height: 100vh;
+  padding-top: 3rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background-color: hsl(0, 100%, 100%);
+  opacity: 0.9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3rem;
+}
+
+nav > a {
+  text-decoration: none;
+  color: hsl(0, 100%, 0%);
+  padding: 0 2rem;
 }
 
 .about__text {
@@ -173,5 +194,3 @@ text-align: left;
 }
 
 }
-
-
