@@ -161,7 +161,7 @@ h2 {
 }
 
 .contact-form {
-  display: ;
+  padding: 5rem;
   -webkit-clip-path: polygon(0 0, 100% 16%, 100% 83%, 0% 100%);
   clip-path: polygon(0 0, 100% 16%, 100% 83%, 0% 100%);
 
