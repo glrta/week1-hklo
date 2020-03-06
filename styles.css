@@ -229,8 +229,10 @@ textarea {
 }
 
 .form__submit {
+  padding: 1rem;
   width: 10rem;
   margin: 1rem;
+  font-size: 1.1rem;
   border-radius: 3rem;
   background-color: var(--primaryColor);
   transition: 0.1s ease-in-out;
