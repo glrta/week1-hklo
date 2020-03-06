@@ -40,19 +40,28 @@ nav {
 .nav__links {
   position: relative;
 }
+.nav__links > a {
+  color: hsl(0, 0%, 0%);
+
+  text-decoration: none;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.nav__links > a:visited {
+  color: hsl(0, 0%, 0%);
+}
+.nav__links > a:hover {
+  color: hsla(0, 0%, 0%, 0.5);
+  transition: ease-in-out 0.3s;
+}
 .nav__logo {
   padding: 0 2rem;
   font-size: 1.5rem;
 }
-.nav__link--hover {
-  text-decoration: none;
-  color: var(--secondaryColor);
-  padding: 0 2rem;
-  font-size: 1.2rem;
-  transition: color 0.4s ease-out;
-}
-.nav__link--hover:hover {
-  opacity: 0.3;
+.nav__logo:hover {
+  color: hsla(0, 0%, 0%, 0.5);
+
   transition: ease-in-out 0.3s;
 }
 
@@ -234,8 +243,10 @@ textarea {
 }
 
 .form__submit {
+  padding: 1rem;
   width: 10rem;
   margin: 1rem;
+  font-size: 1.1rem;
   border-radius: 3rem;
   background-color: var(--primaryColor);
   transition: 0.1s ease-in-out;
