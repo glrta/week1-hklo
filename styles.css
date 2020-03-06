@@ -3,6 +3,7 @@
   --secondaryColor: hsl(0, 0%, 0%, 0.5);
   --deepPink: hsl(352, 71%, 77%);
   --lightPink: hsl(353, 100%, 93%);
+  overflow-x: hidden;
 }
 
 body {
@@ -110,6 +111,10 @@ h2 {
 
 .about-us {
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about__content {
