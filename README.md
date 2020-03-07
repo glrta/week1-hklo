@@ -14,8 +14,8 @@ https://fac19.github.io/week1-hklo/
 
 ## Authors
 
-- [Giovanna](www.github.com/glrta)
-- [Hannah](www.github.com/hannahgooding)
+- [Giovanna](http://github.com/glrta)
+- [Hannah](http://www.github.com/hannahgooding)
 - [Tom](www.github.com/tacotoemeck)
 - [James](www.github.com/jamesj-0)
 
