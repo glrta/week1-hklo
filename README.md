@@ -4,7 +4,7 @@
 
 ## INTRO
 
-This website was built as a part of [Founders and Coders](www.foundersandcoders.com) week 1 group project.
+This website was built as a part of [Founders and Coders](http://www.foundersandcoders.com) week 1 group project.
 
 ### FAC19
 
