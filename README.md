@@ -2,7 +2,7 @@
 
 At [Founders and Coders](https://www.foundersandcoders.com/about/) coding bootcamp we are tasked every week with a different project. A MVP is built in 1.5 days by 4 developers that follow the Agile methodology.
 
-__Week 1__: html, css and some vanilla JS.
+__Week 1 topic__: Version control and teamwork.
 
 # HKLO digital agency website
 
