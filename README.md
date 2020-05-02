@@ -4,6 +4,8 @@ At [Founders and Coders](https://www.foundersandcoders.com/about/) coding bootca
 
 __Week 1 topic__: Version control and teamwork.
 
+See [week 1 schedule](https://founders-and-coders.gitbook.io/coursebook/week-1/schedule).
+
 ---
 
 # HKLO digital agency website
